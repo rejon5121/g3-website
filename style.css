@@ -60,26 +60,11 @@ border:0;
 .banner img{
   width:100%;
 }
-@media screen and (max-width:576px){
-  header{
-    padding:20px;
-  }
-  nav{
-    flex-direction: column;
-  }
-}
 
-@media screen and (min-width:576px) and (max-width:960px){
-  nav{
-    flex-direction:column;
-  }
-  header{
-    padding:20px;
-  }
-}
 main{
   max-width:1440px;
-  margin:0 auto;
+  margin:60px auto;
+
 }
 .edit{
   color:#FF900E;
@@ -101,4 +86,30 @@ main{
   color:#727272;
 font-size: 16px;
 font-weight: 400;
+}
+
+@media screen and (max-width:576px){
+  header{
+    padding:20px;
+  }
+  nav,.teams-container
+  {
+    flex-direction: column;
+  }
+  .img-container{
+    grid-template-columns: 1fr;
+  }
+  .teams-content{
+    padding-left:20px;
+    padding-right:20px;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width:960px){
+  nav{
+    flex-direction:column;
+  }
+  header{
+    padding:20px;
+  }
 }
